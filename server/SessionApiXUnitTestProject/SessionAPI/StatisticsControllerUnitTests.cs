@@ -24,7 +24,7 @@ namespace SessionApiXUnitTestProject.SessionAPI
         {
             var expected = new SessionStats
             {
-                UserSessions = new UserSessionAggregator
+                UserSessions = new UserSessions
                 { 
                     Logons = 42,
                 }

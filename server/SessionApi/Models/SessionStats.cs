@@ -7,6 +7,6 @@ namespace SessionApi.Models
 {
     public class SessionStats
     {
-        public UserSessionAggregator UserSessions { get; set; }
+        public UserSessions UserSessions { get; set; }
     }
 }

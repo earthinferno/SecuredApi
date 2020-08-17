@@ -10,8 +10,7 @@ namespace SessionApi.Controllers
     {
         public IActionResult Index()
         {
-            //var stubData = new SessionStats { UserSessions = new UserSessionAggregator { Logons = 42, StartDateTime = DateTime.Now.AddDays(-30), EndDateTime = DateTime.Now } };
-            var stubData = new SessionStats { UserSessions = new UserSessionAggregator { Logons = 42 } };
+            var stubData = new SessionStats { UserSessions = new UserSessions { Logons = 42 } };
 
             return new JsonResult(stubData);
         }
