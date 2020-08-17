@@ -62,7 +62,7 @@ namespace Client
             var apiClient = new HttpClient();
             apiClient.SetBearerToken(tokenResponse.AccessToken);
 
-            var response = await apiClient.GetAsync("https://localhost:6001/identity");
+            var response = await apiClient.GetAsync("https://localhost:6001/profile");
             Console.WriteLine("PoohPants");
 
             if (!response.IsSuccessStatusCode)
